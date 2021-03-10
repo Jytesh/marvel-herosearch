@@ -7,7 +7,7 @@ const parseThumb = (thumb) => `${thumb.path}.${thumb.extension}`
 class CharacterCarousel extends React.Component {
   constructor(props) {
     super(props);
-    this.children = props.data.map( (x,i) => <div><Character data={x}key={i}/></div>);
+    this.children = props.data.map( (x,i) => <div key={i}><Character data={x}/></div>);
     console.log(this.children)
     this.slickConfig = {
       dots: true,

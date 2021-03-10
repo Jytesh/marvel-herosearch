@@ -5,7 +5,7 @@ import marvelAPI from './api';
 
 import CharacterCarousel from './Components/Character';
 import GithubBadge from 'react-github-corner'
-
+import ReturnButton from './Components/returnButton';
 
 class Input extends React.Component {
   constructor(){
@@ -28,16 +28,21 @@ class Input extends React.Component {
   }
   render() {
     if (!this.state.input) 
-    return (
-      <div id="mainInput">
-        <div>
-          <input type="text" id="heroQuery"></input>
-          <button id="Search" onClick={this.search}>Search</button>
+      return (
+        <div id="mainInput">
+          <div>
+            <input type="text" id="heroQuery"></input>
+            <button id="Search" onClick={this.search}>Search</button>
+          </div>
         </div>
-      </div>
-      )
+        )
     else if (this.state.charData) {
-      return <CharacterCarousel data={this.state.charData}/>
+      return (
+        <div className="carouselContainer">
+          <CharacterCarousel data={this.state.charData}/>
+          <ReturnButton parent={this}/>
+        </div>
+      )
     }
   }
   renderError = async(err) => {
