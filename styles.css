@@ -1,0 +1,77 @@
+body {
+    background-color: rgba(9, 10, 11, 0.7);
+    height: 100%;
+    padding-top: 30px;
+}
+html {
+    background-color:rgba(9, 10, 11, 0.7);
+    height: 100%;
+}
+
+footer > a{
+    text-align: center;
+}
+#main {
+    background-image: url(https://i.annihil.us/u/prod/marvel/i/mg/8/e0/52bdf830aa094.jpg);
+    height: 420px;
+    padding-left: 20px;
+}
+.absolute {
+    position: absolute;
+    padding-top: 20px;
+}
+.absolute > div {
+    padding-top: 20px;
+}
+#skew-box {
+    position: absolute;
+    transform: skew(-18deg);
+    -webkit-transform: skew(-18deg);
+    height: 420px;
+    width: 700px;
+    background-color: rgba(0,0,0);
+    margin-left: -200px;
+    opacity: 50%;
+}
+#Search, input {
+    color: rgb(256,61,61);
+    background-color: #181A1B;
+}
+.character {
+    background-color: rgba(100,100,100, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(64, 253, 181, 0.438);
+    height: 234px;
+    width: 260px;
+    transition: 0.3s;
+    transition: transform .2s;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+.character:hover {
+    box-shadow: 0 8px 16px 0 rgba(64, 253, 181, 0.438);
+    overflow: auto;
+    transform: scale(1.1);
+}
+.characterContainer {
+    padding: 2px 16px;
+}
+.characterContainer > img {
+    height: 200px;
+    width: 200px;
+}
+.copyrights {
+    position: inherit;
+    transform: translateX(10)
+}
+#root {
+    width: 100%;
+    max-width: 600px;
+}
+.Carousel {
+    width: 100%;
+}
+slick-slider {
+    padding: 12px;
+    padding-right: 12px;
+}
