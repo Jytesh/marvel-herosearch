@@ -93,8 +93,8 @@ slick-slider {
 .hostedBy {
     color: rgb(0, 252, 239);    
     padding: 12px;
-    margin-right: 0px;
-    transform: translateX(60%);
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .footerContainer > * > h1 {
