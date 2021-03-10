@@ -1,10 +1,10 @@
 body {
-    background-color: rgba(9, 10, 11, 0.7);
+    background-color: rgba(34,34,34,1);
     height: 100%;
     padding-top: 30px;
 }
 html {
-    background-color:rgba(9, 10, 11, 0.7);
+    background-color:rgba(34,34,34,1);
     height: 100%;
 }
 
@@ -33,7 +33,7 @@ footer > a{
     margin-left: -200px;
     opacity: 50%;
 }
-#Search, input {
+button, input {
     color: rgb(256,61,61);
     background-color: #181A1B;
 }
@@ -74,4 +74,36 @@ footer > a{
 slick-slider {
     padding: 12px;
     padding-right: 12px;
+}
+.carouselContainer {
+    padding-top: 20px
+}
+
+
+.footerContainer {
+    padding: 25px;
+    display:flex;
+    margin-top: 18px;
+}
+.madeWithReact {
+    color: rgb(0, 252, 239);
+    justify-content:baseline;
+    padding: 12px;
+}
+.hostedBy {
+    color: rgb(0, 252, 239);    
+    padding: 12px;
+    margin-right: 0px;
+    transform: translateX(60%);
+}
+
+.footerContainer > * > h1 {
+    text-align: center;
+    scale: 0.5;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
