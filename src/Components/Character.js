@@ -14,6 +14,10 @@ class CharacterCarousel extends React.Component {
       infinite: true,
       autoplay: true,
       variableWidth: true,
+      adaptiveHeight: true,
+      accessibility: true,
+      arrows: true,
+      draggable: true,
     };
   }
   render(){
