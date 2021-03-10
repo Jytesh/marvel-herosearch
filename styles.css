@@ -60,6 +60,9 @@ button, input {
     height: 200px;
     width: 200px;
 }
+.characterContainer > h1,p {
+    color: rgb(256,61,61);
+}
 .copyrights {
     position: inherit;
     transform: translateX(10)
@@ -70,6 +73,7 @@ button, input {
 }
 .Carousel {
     width: 100%;
+    transform: translateX(12px);
 }
 slick-slider {
     padding: 12px;
