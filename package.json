@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "homepage": "https://marvel.jytesh.me",
   "dependencies": {
-    
     "md5": "^2.3.0",
     "node-fetch": "^2.6.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-github-corner": "^2.5.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.0",
     "slick-carousel": "^1.8.1",
