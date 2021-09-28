@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,13 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       # Setting up Node
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '12.16.1'
-      
+          node-version: "12.16.1"
+
       # Installing Dependencies
       - name: Installing Dependencies
         run: npm ci
@@ -33,7 +33,7 @@ jobs:
         run: git config user.name Jytesh
       - name: Set git email
         run: git config user.email 44925963+Jytesh@users.noreply.github.com
-        
+
       - name: Build
         run: npm run build
       # Deploying
