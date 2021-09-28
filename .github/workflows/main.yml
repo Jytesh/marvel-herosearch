@@ -24,18 +24,18 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "12.16.1"
+          node-version: "16.6.1"
 
       # Installing Dependencies
       - name: Installing Dependencies
-        run: npm ci
+        run: yarn
       - name: Set git author
         run: git config user.name Jytesh
       - name: Set git email
         run: git config user.email 44925963+Jytesh@users.noreply.github.com
 
       - name: Build
-        run: npm run build
+        run: yarn build
       # Deploying
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.0
